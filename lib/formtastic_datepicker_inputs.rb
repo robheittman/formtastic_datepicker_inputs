@@ -11,7 +11,7 @@ module Formtastic::Inputs
     end
 
     def format
-      input_options[:format] || '%d %b %Y'
+      input_options[:format] || Date::DATE_FORMATS[:default]
     end
 
     def value
@@ -31,7 +31,7 @@ module Formtastic::Inputs
   class DateTimePickerInput < Formtastic::Inputs::DatePickerInput
 
     def format
-      input_options[:format] || '%d %b %Y %H:%M'
+      input_options[:format] || Time::DATE_FORMATS[:default]
     end
 
     def css_class
