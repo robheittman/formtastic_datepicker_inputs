@@ -11,7 +11,7 @@ module Formtastic::Inputs
     end
 
     def format
-      input_options[:format] || Date::DATE_FORMATS[:default]
+      input_options[:format] || Date::DATE_FORMATS[:default] || '%d %b %Y'
     end
 
     def value
