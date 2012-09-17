@@ -4,7 +4,6 @@ module Formtastic::Inputs
   class DatePickerInput
     include Base
     include Base::Stringish
-    include Base::DatetimePickerish
 
     def to_html
       input_wrapping do
