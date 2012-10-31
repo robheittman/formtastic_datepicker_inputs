@@ -1,7 +1,7 @@
 # FormtasticDatepickerInputs
 module Formtastic::Inputs
 
-  class DatePickerInput
+  class DateChooserInput
     include Base
     include Base::Stringish
 
@@ -30,7 +30,7 @@ module Formtastic::Inputs
     end
   end
 
-  class DateTimePickerInput < Formtastic::Inputs::DatePickerInput
+  class DateTimeChooserInput < Formtastic::Inputs::DateChooserInput
 
     def format
       input_options[:format] || Time::DATE_FORMATS[:default]
